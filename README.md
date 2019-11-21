@@ -1,6 +1,7 @@
-# 码志
+# Github Pages学习
 
-我的个人博客：<https://mazhuang.org>，欢迎 Star 和 Fork。
+我的个人网站：<https://chamboin.tk>。
+此博客Fork自<https://mazhuang.org>。
 
 ## 概览
 
@@ -16,7 +17,7 @@
 
 ## 效果预览
 
-**[在线预览 &rarr;](https://mazhuang.org)**
+**[在线预览 &rarr;](https://chamboin.github.io)**
 
 ![screenshot home](https://mazhuang.org/assets/images/screenshots/home.png)
 
