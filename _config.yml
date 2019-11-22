@@ -2,7 +2,7 @@
 #   Main Configs   #
 # ---------------- #
 baseurl:
-url: https://chamboin.github.io
+url: https://chamboin.tk
 date_format: "ordinal"
 title: 个人博客
 subtitle: "小白的学习历程"
