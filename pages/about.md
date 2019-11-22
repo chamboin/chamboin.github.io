@@ -1,18 +1,14 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 学通信的也想玩全栈？？
+keywords: Chamboin Zhang, 达瓦里希
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
-
-仰慕「优雅编码的艺术」。
-
-坚信熟能生巧，努力改变人生。
+典型理工男，痴迷新技术、电子产品，梦想学完全栈~~做梦~~，正宗垃圾佬。
 
 ## 联系
 
