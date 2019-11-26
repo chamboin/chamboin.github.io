@@ -168,11 +168,11 @@ php容器主要做一下网站根目录映射，开放默认端口就可以，�
 
 差点忘了主角了，到官网[下载Typecho][2]，上传到想要挂载的网站根目录(wget更方便嘛)，解压，把解压出来的build目录中所有文件放到网站根目录，删除空的build目录就可以了，剩下的就是在浏览器中完成安装了。建议使用**开发版**，正式版有BUG可能会导致无法完成安装。
 
-一切正常的话打开浏览器输入你的域名可以看到
-![startscreen.png][3]
-开始配置，输入相应的数据库配置，这里要选择Mysql而不是Sqlite。输入你设置的用户和密码，数据库地址要填你的数据库服务名称，端口根据自己配置填。
-![configscreen.png][4]
-至于我为什么使用Typecho，因为它支持markdown写文章，比wordpress更轻量化，虽然hexo这种静态的也可以，但是又不想完全和我的[Github pages][5]内容相同，所以现在就先用它了。以后可能也还会用wordpress吧，毕竟功能强大主题和插件又多，完全不会前段的我又不会自己做主题插件什么的。
+一切正常的话打开浏览器输入你的域名可以看到  
+![startscreen.png](/images/posts/docker/installscreen.png)
+开始配置，输入相应的数据库配置，这里要选择Mysql而不是Sqlite。输入你设置的用户和密码，数据库地址要填你的数据库服务名称，端口根据自己配置填。  
+![configscreen.png](/images/posts/docker/configscreen.png)
+至于我为什么使用Typecho，因为它支持markdown写文章，比wordpress更轻量化，虽然hexo这种静态的也可以，但是又不想完全和我的[Github pages][3]内容相同，所以现在就先用它了。以后可能也还会用wordpress吧，毕竟功能强大主题和插件又多，完全不会前段的我又不会自己做主题插件什么的。
 
 ### 运行
 
@@ -222,6 +222,4 @@ Enjoy!
 
 [1]:https://chamboin.github.io/2019/11/25/docker-install/
 [2]:http://typecho.org/download
-[3]:https://chamboin.github.io/images/posts/installscreen.png
-[4]:https://chamboin.github.io/images/posts/configscreen.png
-[5]:https://chamboin.github.io
+[3]:https://chamboin.github.io
