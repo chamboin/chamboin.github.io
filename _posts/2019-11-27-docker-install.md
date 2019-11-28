@@ -6,11 +6,6 @@ description: 安装Docker，优化镜像下载速度
 keywords: Docker, Linux
 ---
 
-**目录**
-
-* TOC
-{:toc}
-
 ## Docker是什么
 
 **Docker**使用 Google 公司推出的[Go 语言](https://golang.org)进行开发实现，基于 Linux 内核的[cgroup](https://zh.wikipedia.org/wiki/Cgroups)，[namespace](https://en.wikipedia.org/wiki/Linux_namespaces)，以及 [AUFS](https://en.wikipedia.org/wiki/Aufs) 类的 [Union FS](https://en.wikipedia.org/wiki/Union_mount) 等技术，对进程进行封装隔离，属于 [操作系统层面的虚拟化技术](https://en.wikipedia.org/wiki/Operating-system-level_virtualization)。由于隔离的进程独立于宿主和其它的隔离的进程，因此也称其为容器。最初实现是基于 LXC，从 0.7 版本以后开始去除 LXC，转而使用自行开发的 [libcontainer](https://github.com/docker/libcontainer)，从 1.11 开始，则进一步演进为使用 [runC](https://github.com/opencontainers/runc) 和 [containerd](https://github.com/containerd/containerd)。
@@ -221,3 +216,54 @@ $ sudo systemctl restart docker
 >注意：如果您之前查看旧教程，修改了 `docker.service` 文件内容，请去掉您添加的内容（`--registry-mirror=https://dockerhub.azk8s.cn`）。
 
 至此，Docker 的安装已经完成了，关于使用方面，多看官方文档。
+
+## Docker Compose
+
+### 项目简介
+
+Docker Compose 是 Docker 官方编排（Orchestration）项目之一，负责快速的部署分布式应用。接下来将介绍 Compose 项目情况以及安装和使用。
+
+Compose 项目是 Docker 官方的开源项目，负责实现对 Docker 容器集群的快速编排。代码开源在<https://github.com/docker/compose>。
+
+它允许用户通过一个单独的 docker-compose.yml 模板文件（YAML 格式）来定义一组相关联的应用容器为一个项目（project）。
+
+Compose 中有两个重要的概念：
+
+- 服务 (service)：一个应用的容器，实际上可以包括若干运行相同镜像的容器实例。
+
+- 项目 (project)：由一组关联的应用容器组成的一个完整业务单元，在 docker-compose.yml 文件中定义。
+
+Compose 的默认管理对象是项目，通过子命令对项目中的一组容器进行便捷地生命周期管理。
+
+Compose 项目由 Python 编写，实现上调用了 Docker 服务提供的 API 来对容器进行管理。因此，只要所操作的平台支持 Docker API，就可以在其上利用 Compose 来进行编排管理。
+
+### Docker Compose 安装
+
+Compose 可以通过 Python 的包管理工具 pip 进行安装，也可以直接下载编译好的二进制文件使用，甚至能够直接在 Docker 容器中运行。
+
+#### 二进制包安装
+
+从 官方 [GitHub Release](https://github.com/docker/compose/releases) 处直接下载编译好的二进制文件即可。
+
+例如，在 Linux 64 位系统上直接下载对应的二进制包。
+```Bash
+$ sudo curl -L https://github.com/docker/compose/releases/download/1.24.1/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+$ sudo chmod +x /usr/local/bin/docker-compose
+```
+
+#### 使用 PIP 安装
+
+这种方式是将 Compose 作为一个 Python 应用进行安装，我比较喜欢这种方式，但是dalao推荐 x86 架构的使用二进制安装 ARM 架构再用这种方式。
+
+执行：
+```Bash
+$ sudo pip install -U docker-compose
+```
+看到类似这样的输出就是安装成功：
+```Bash
+Successfully installed docker-compose cached-property requests texttable websocket-client docker-py dockerpty six enum34 backports.ssl-match-hostname ipaddress
+```
+
+##  参考来源
+
+[Docker——从入门到实践](https://yeasy.gitbooks.io/docker_practice/)
