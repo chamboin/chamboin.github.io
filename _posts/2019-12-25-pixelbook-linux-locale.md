@@ -1,3 +1,11 @@
+---
+layout: post
+title: Pixelbook更改Linux系统语言使用中文和谷歌拼音输入法(Crostini) 
+categories: ChromeOS
+description: 本地化，中文化
+keywords: Pixelbook, Crostini, ChromeOS
+---
+
 # Pixelbook 本地化
 
 关于 Linux 的本地化，网上搜一搜好多人不建议 Liunx 使用中文作为系统默认语言，认为可能会出现不兼容或乱码等问题。其实我觉得完全没有必要担心，Linux 发展至今关于中文的本地化做的已经比较完善了，没有必要坚持使用英文，该用中文就用中文好了。目前我的所有运行 Linux 的机器都用的中文，并没有出现任何问题。
