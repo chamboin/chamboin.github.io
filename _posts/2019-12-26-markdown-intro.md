@@ -647,9 +647,9 @@ Markdown 的语法简洁，但有其局限性，所以特意保留了内联 HTML
 
 ```html
 <p>
-  <img class="emoji" title=":camel:" alt=":camel:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f42b.png" height="20" width="20">
-  <img class="emoji" title=":blush:" alt=":blush:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60a.png" height="20" width="20">
-  <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
+  <img class="emoji" title=":camel:" alt=":camel:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f42b.png" height="20" width="20">
+  <img class="emoji" title=":blush:" alt=":blush:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f60a.png" height="20" width="20">
+  <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
 </p>
 ```
 
