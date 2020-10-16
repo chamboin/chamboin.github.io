@@ -49,3 +49,7 @@
 - name: 聆听风声
   url: http://www.codeinfo.top
   src: www
+
+- name: 氪金核心
+  url: https://kcores.com
+  src: www
